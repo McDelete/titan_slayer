@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Menu/Hearts/HeartUI.tscn" type="PackedScene" id=1]
+
+[node name="BossHearts" type="CanvasLayer"]
+
+[node name="HeartUI" parent="." instance=ExtResource( 1 )]
+visible = true
+margin_left = 32.0
+margin_top = 536.0
+margin_right = 70.0
+margin_bottom = 574.0
+grow_horizontal = 2
+grow_vertical = 2
+statOwner = 1
+
+[node name="HeartUIEmpty" parent="HeartUI" index="0"]
+rect_scale = Vector2( 2, 2 )
+
+[node name="HeartUIOneQ" parent="HeartUI" index="1"]
+rect_scale = Vector2( 2, 2 )
+
+[node name="HeartUITwoQ" parent="HeartUI" index="2"]
+rect_scale = Vector2( 2, 2 )
+
+[node name="HeartUIThreeQ" parent="HeartUI" index="3"]
+rect_scale = Vector2( 2, 2 )
+
+[node name="HeartUIFull" parent="HeartUI" index="4"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 85.0
+margin_bottom = 17.0
+rect_scale = Vector2( 2, 2 )
+
+[editable path="HeartUI"]

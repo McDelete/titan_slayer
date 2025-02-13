@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/project_Ships_Guns_LaserGun_Weapons_Beam_End.wav-a2859163b6746d5ff795004e4e4ce951.sample"
+
+[deps]
+
+source_file="res://assets/Enemy/Laser_sheet/project_Ships_Guns_LaserGun_Weapons_Beam_End.wav"
+dest_files=[ "res://.import/project_Ships_Guns_LaserGun_Weapons_Beam_End.wav-a2859163b6746d5ff795004e4e4ce951.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,115 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Menu/Blox2.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Menu/PauseMenu.gd" type="Script" id=2]
+[ext_resource path="res://Music and Sounds/SFX/Wav Files/Unpause.wav" type="AudioStream" id=3]
+[ext_resource path="res://Music and Sounds/SFX/Wav Files/Pause.wav" type="AudioStream" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 41
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=2]
+Label/colors/font_color = Color( 0.760784, 0.529412, 0.901961, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+Label/colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+Label/constants/line_spacing = 3
+Label/constants/shadow_as_outline = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/fonts/font = SubResource( 1 )
+Label/styles/normal = null
+
+[sub_resource type="DynamicFont" id=4]
+size = 29
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=3]
+Button/colors/font_color = Color( 0.419608, 0.541176, 0.8, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_focus = Color( 0.760784, 0.529412, 0.901961, 1 )
+Button/colors/font_color_hover = Color( 0.760784, 0.529412, 0.901961, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = SubResource( 4 )
+Button/styles/disabled = null
+Button/styles/focus = null
+Button/styles/hover = null
+Button/styles/normal = null
+Button/styles/pressed = null
+
+[node name="PauseMenu" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseOverlay" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.235294 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="PauseOverlay"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 2.0
+margin_top = -128.0
+margin_right = 2.0
+margin_bottom = -87.0
+theme = SubResource( 2 )
+text = "Paused"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="PauseOverlay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -65.0
+margin_top = -52.0
+margin_right = 109.0
+margin_bottom = 139.0
+theme = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Continue" type="Button" parent="PauseOverlay/Menu"]
+margin_right = 132.0
+margin_bottom = 35.0
+focus_neighbour_top = NodePath("../QuitBtn")
+focus_neighbour_bottom = NodePath("../QuitBtn")
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Continue"
+
+[node name="QuitBtn" type="Button" parent="PauseOverlay/Menu"]
+margin_top = 39.0
+margin_right = 147.0
+margin_bottom = 74.0
+focus_neighbour_top = NodePath("../Continue")
+focus_neighbour_bottom = NodePath("../Continue")
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Quit Game"
+align = 2
+
+[node name="PauseSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="UnpauseSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[connection signal="pressed" from="PauseOverlay/Menu/Continue" to="." method="_on_Continue_pressed"]
+[connection signal="pressed" from="PauseOverlay/Menu/QuitBtn" to="." method="_on_QuitBtn_pressed"]

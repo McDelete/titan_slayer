@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ScreenEffects/BlurEffect.gd" type="Script" id=1]
+
+[sub_resource type="Environment" id=58]
+background_mode = 4
+dof_blur_far_distance = 2.77
+dof_blur_far_amount = 0.35
+dof_blur_near_enabled = true
+dof_blur_near_transition = 5.0
+
+[node name="BlurEffect" type="WorldEnvironment"]
+environment = SubResource( 58 )
+script = ExtResource( 1 )

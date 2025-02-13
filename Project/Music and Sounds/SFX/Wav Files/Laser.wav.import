@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Laser.wav-0a303cde85add105d79005e4cb0fe5fb.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/SFX/Wav Files/Laser.wav"
+dest_files=[ "res://.import/Laser.wav-0a303cde85add105d79005e4cb0fe5fb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

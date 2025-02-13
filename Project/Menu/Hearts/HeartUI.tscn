@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Menu/Hearts/HeartUI.gd" type="Script" id=1]
+[ext_resource path="res://Menu/Hearts/2Qheart.png" type="Texture" id=2]
+[ext_resource path="res://Menu/Hearts/1Qheart.png" type="Texture" id=3]
+[ext_resource path="res://Menu/Hearts/FullHeart.png" type="Texture" id=4]
+[ext_resource path="res://Menu/Hearts/EmptyHeart.png" type="Texture" id=5]
+[ext_resource path="res://Menu/Hearts/3Qheart.png" type="Texture" id=6]
+
+[node name="HeartUI" type="Control"]
+visible = false
+margin_left = 24.0
+margin_top = 24.0
+margin_right = 62.0
+margin_bottom = 62.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeartUIEmpty" type="TextureRect" parent="."]
+margin_right = 85.0
+margin_bottom = 17.0
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 5 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeartUIOneQ" type="TextureRect" parent="."]
+margin_right = 85.0
+margin_bottom = 17.0
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeartUITwoQ" type="TextureRect" parent="."]
+margin_right = 85.0
+margin_bottom = 17.0
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeartUIThreeQ" type="TextureRect" parent="."]
+margin_right = 85.0
+margin_bottom = 17.0
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeartUIFull" type="TextureRect" parent="."]
+margin_left = -2.0
+margin_top = -2.0
+margin_right = 83.0
+margin_bottom = 15.0
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

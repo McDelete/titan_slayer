@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Enemy/special_attack/Begin.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Enemy/special_attack/Pivot.gd" type="Script" id=2]
+
+[node name="QuadLaser" type="Node2D"]
+
+[node name="Pivot" type="Position2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Begin" parent="Pivot" instance=ExtResource( 1 )]
+rotation = 0.785398
+
+[node name="Begin2" parent="Pivot" instance=ExtResource( 1 )]
+rotation = 2.35619
+
+[node name="Begin3" parent="Pivot" instance=ExtResource( 1 )]
+rotation = -2.3562
+
+[node name="Begin4" parent="Pivot" instance=ExtResource( 1 )]
+rotation = -0.785395

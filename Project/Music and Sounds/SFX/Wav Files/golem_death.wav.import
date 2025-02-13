@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/golem_death.wav-3e9a9093a7daed1746384ef8a3833a76.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/SFX/Wav Files/golem_death.wav"
+dest_files=[ "res://.import/golem_death.wav-3e9a9093a7daed1746384ef8a3833a76.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

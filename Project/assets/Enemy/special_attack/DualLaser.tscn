@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Enemy/special_attack/DualLaser.gd" type="Script" id=1]
+[ext_resource path="res://assets/Enemy/special_attack/Begin.tscn" type="PackedScene" id=2]
+
+[node name="DualLaser" type="Node2D"]
+position = Vector2( 80, 48 )
+script = ExtResource( 1 )
+ROTATION_SPEED = 8
+
+[node name="First" type="Position2D" parent="."]
+rotation = 1.5708
+
+[node name="Begin" parent="First" instance=ExtResource( 2 )]
+
+[node name="Second" type="Position2D" parent="."]
+rotation = 1.5708
+
+[node name="Begin" parent="Second" instance=ExtResource( 2 )]
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

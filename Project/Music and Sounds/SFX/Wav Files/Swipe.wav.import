@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Swipe.wav-7131cc34c7fef2fe90c0913687a05ad1.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/SFX/Wav Files/Swipe.wav"
+dest_files=[ "res://.import/Swipe.wav-7131cc34c7fef2fe90c0913687a05ad1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

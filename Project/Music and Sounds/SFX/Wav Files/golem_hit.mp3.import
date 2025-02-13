@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/golem_hit.mp3-bf0dce420caba63fc521135575826c50.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/SFX/Wav Files/golem_hit.mp3"
+dest_files=[ "res://.import/golem_hit.mp3-bf0dce420caba63fc521135575826c50.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

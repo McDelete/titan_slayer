@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://CanvasModulate/DeathColorController.gd" type="Script" id=1]
+
+[node name="DeathColorController" type="CanvasModulate"]
+script = ExtResource( 1 )
